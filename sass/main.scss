@@ -1,0 +1,62 @@
+ @import 'reset';
+ $maincolor:green;
+$font:40px;
+body
+{
+     background:$maincolor; 
+     margin:20px; 
+}
+.box{
+    .child{
+padding:2opx;
+margin: 20px;
+background:red;  
+width:2022px ;
+height:20px ;
+    }
+
+}.global
+{
+    height: 100px;
+    width: 100px;
+    background: red;
+
+}
+
+.header
+{
+    @extend .global;
+}
+.box2{
+    height:200px ;
+   width:200px ; 
+   background:green; 
+}
+.box3{
+    @extend .box2;
+}
+@mixin boxing ($h , $w) {
+height: $h;
+width:$w ;
+border-radius:50%;
+border:2px solid red;  
+}
+.footer
+{
+    @include boxing(200px,300px )
+}
+@mixin a($h ,$w) {
+    height:$h  ;
+    width:$w;
+}
+.b{
+    @include a(200px ,300px)
+}
+.circle{
+    border-radius: 50px;
+    @include a(300px ,400px);
+    background:red;
+} 
+.b{
+   @extend .circle; 
+}

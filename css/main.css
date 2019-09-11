@@ -1,0 +1,41 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  background: lightblue; }
+
+body {
+  background: green;
+  margin: 20px; }
+
+.box .child {
+  padding: 2opx;
+  margin: 20px;
+  background: red;
+  width: 2022px;
+  height: 20px; }
+
+.global, .header {
+  height: 100px;
+  width: 100px;
+  background: red; }
+
+.box2, .box3 {
+  height: 200px;
+  width: 200px;
+  background: green; }
+
+.footer {
+  height: 200px;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid red; }
+
+.b {
+  height: 200px;
+  width: 300px; }
+
+.circle, .b {
+  border-radius: 50px;
+  height: 300px;
+  width: 400px;
+  background: red; }
